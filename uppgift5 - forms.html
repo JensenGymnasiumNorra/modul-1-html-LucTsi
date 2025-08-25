@@ -28,6 +28,62 @@ Se till att när man klickar på submit-knappen i formuläret så ska tack.html 
 
 <body>
 
+    <form action="tack.html" method="get">
+
+        <fieldset style="padding: 30px; margin-bottom: 15px;">
+        <legend>Personal:</legend>
+
+        <label for="Firstname">First name: </label>
+        <input type="text" id="FullNamn" name="Fname-input"> 
+        <br>
+        <label for="Lastname">Last name: </label>
+        <input type="text" id="Lastname" name="Lname-input">
+        <br>
+        <label for="Age">Age: </label>
+        <select name="Age" id="age-select">
+            <option value="" disabled>--Please choose an option--</option>
+            <option value="-13" >under 13</option>
+            <option value="13-19">13-19</option>
+            <option value="19+">over 19</option>
+
+        </select>
+         <br>
+        <label for="Email">Email Adress: </label>
+        <input type="email" id="Email" name="Email-input">
+        </fieldset>
+
+        <fieldset style="padding: 30px; margin-bottom: 15px;">
+        <legend>Questions:</legend>
+
+        <h4>What languages are used on this project:</h4>
+        <input type="checkbox" id="language1" name="language1" value="css">
+        <label for="vehicle1"> CSS</label><br>
+        <input type="checkbox" id="language2" name="language3" value="hmtl">
+        <label for="vehicle2"> HMTL</label><br>
+        <input type="checkbox" id="language3" name="language3" value="JavaScript">
+        <label for="vehicle3"> JAVASCRIPT</label>
+
+        <h4>Rate this form:</h4>
+        <label for="Rating">1</label>
+        <input type="radio" id="R1" name="Rates">
+        <label for="Rating">2</label>
+        <input type="radio" id="R2" name="Rates">
+        <label for="Rating">3</label>
+        <input type="radio" id="R3" name="Rates">
+        <label for="Rating">4</label>
+        <input type="radio" id="R4" name="Rates">
+        <label for="Rating">5</label>
+        <input type="radio" id="R5" name="Rates">
+        
+
+      </fieldset>
+
+      <fieldset>
+            <input type="submit" value="Submit">
+      </fieldset>
+
+    </form>
+ 
 </body>
 
 </html>
