@@ -1,0 +1,147 @@
+<!--
+Varje recept-sida ska innehålla följande delar:
+    - Högst upp ska det finnas en länk till “receptsida.html” som det står “Tillbaka hem” på.
+    - En header med receptets namn
+    - En kort paragraf om vad detta recept är för något och varför det är gott
+    - En bild på maträtten 
+    - En oordnad lista över ingredienserna som receptet innehåller
+    - En ordnad lista som steg för steg förklarar receptet
+    - En tabell med varje ingrediens och hur många kalorier det innehåller
+    - Ett formulär där personer som läser receptet kan ge kommentarer (Ska ej fungera, bara formuläret ska finnas)
+    - Använd div och span där det behövs (Minst 1 gång ska det finnas)
+    - Tydliga kommentarer som förklarar varje sektion (“T.ex. en oordnad lista över alla ingredienser”)
+    
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+<style >
+    table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  
+}
+tr:hover {background-color: hsla(0, 0%, 0%, 0.11);}
+</style>
+
+
+</head>
+
+<body>
+     <a style="font-size: 20px;" href="slutuppgift-receptsida.html">Tillbaka</a>
+
+    <div>
+        <h1>Pancake</h1>
+        <p>A delicious pancake recipe, thats quick and easy to do, even for beginners!</p>
+        <img src="pics/pancakes.jpg" alt="pancakes"style="width:260px; height:auto;"  >
+
+    </div>
+
+
+    <div >
+        <h3>Ingredients:</h3>
+        <ul style="margin-bottom: 33px;"> 
+            <li>1⅓ cups all-purpose flour <span style="color:gray">(160g)</span></li>
+            <li>1 tablespoon baking powder</li>
+            <li>2 tablespoons granulated sugar</li>
+            <li>1 teaspoon salt</li>
+            <li>1 cup milk <span style="color:gray">(240ml)</span></li>
+            <li>1 egg</li>
+            <li>4 tablespoons butter melted <span style="color:gray">(56g)</span></li>
+            <li>2 teaspoons vanilla extract</li>
+        </ul>
+    </div>
+
+    <div>
+        <h3>Instructions:</h3>
+         <ol style="width: 1000px; margin-bottom: 33px;">
+            <li>Whisk the flour, sugar, baking powder, and salt in a large bowl.</li> <br>
+            <li> In a medium bowl, whisk together the milk, vanilla, and egg.</li><br>
+            <li> Add the melted butter and whisk until well combined.</li><br>
+            <li> Pour the wet ingredients into the dry ingredients.</li><br>
+            <li> Fold together just until combined. A few lumps are okay!</li><br>
+            <li> Heat a large skillet or griddle over medium-high heat. Once hot, grease the pan. Working in batches, add 1/4 cup of batter for each pancake. Cook for a few minutes until golden on the bottom and bubbles start to appear on the top, then flip over and cook the second side an additional minute or until golden brown. Add more butter to grease the pan between each new batch of pancakes.</li><br>
+        </ol>
+        
+    </div>
+
+    <div>
+    <table style="width:33%; font-size: 16px; margin-bottom:50px ;"  ; >
+        <h3>Nutrients:</h3>
+        <tr>
+            <th>Ingredient</th>
+            <th>Kcal</th>
+        </tr>
+        <tr align="center">
+            <td>all-purpose flour (160g)</td>
+            <td>582</td>
+        </tr>
+        <tr align="center">
+            <td>1 tablespoon baking powder</td>
+            <td>7</td>
+        </tr>     
+        <tr align="center">
+            <td>2 tablespoons granulated sugar</td>
+            <td>97</td>
+        </tr>     
+        <tr align="center">
+            <td>1 teaspoon salt</td>
+            <td>0</td>
+        </tr>
+        <tr align="center">
+            <td>1 cup milk (240ml)</td>
+            <td>140</td>
+        </tr> 
+        <tr align="center">
+            <td>1 egg</td>
+            <td>70</td>
+        </tr> 
+        <tr align="center">
+            <td>butter melted (56g)</td>
+            <td>402</td>
+        </tr> 
+        <tr align="center">
+            <td>2 teaspoons vanilla extract</td>
+            <td>8</td>
+        </tr> 
+        <tr align="center">
+            <th>TOTAL CALORIES</td>
+            <th>1306</td>
+        </tr> 
+
+    </table>
+    </div>
+
+    <div>
+        <form>
+            <fieldset style="padding: 30px; margin-bottom: 15px;">
+                <legend>kommentarer</legend>
+                    <input type="text" id="Comment" name="C-input"> 
+
+            </fieldset>
+
+        </form>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+
+</html>
