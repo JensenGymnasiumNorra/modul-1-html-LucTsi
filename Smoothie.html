@@ -1,0 +1,133 @@
+<!--
+Varje recept-sida ska innehålla följande delar:
+    - Högst upp ska det finnas en länk till “receptsida.html” som det står “Tillbaka hem” på.
+    - En header med receptets namn
+    - En kort paragraf om vad detta recept är för något och varför det är gott
+    - En bild på maträtten 
+    - En oordnad lista över ingredienserna som receptet innehåller
+    - En ordnad lista som steg för steg förklarar receptet
+    - En tabell med varje ingrediens och hur många kalorier det innehåller
+    - Ett formulär där personer som läser receptet kan ge kommentarer (Ska ej fungera, bara formuläret ska finnas)
+    - Använd div och span där det behövs (Minst 1 gång ska det finnas)
+    - Tydliga kommentarer som förklarar varje sektion (“T.ex. en oordnad lista över alla ingredienser”)
+    
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+<style >
+    table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  
+}
+tr:hover {background-color: hsla(0, 0%, 0%, 0.11);}
+
+</style>
+
+
+</head>
+
+<body>
+     <a style="font-size: 20px;" href="slutuppgift-receptsida.html">Tillbaka</a>
+
+    <div>
+        <h1>Smoothie</h1>
+        <p>A refreshing smoothie recept that will shock you. Deliciour and easy to make even for beginners!</p>
+        <img src="pics/smoothie.jpg" alt="smoothie"style="width:260px; height:auto;"  >
+
+    </div>
+
+
+    <div >
+        <h3>Ingredients:</h3>
+        <ul style="margin-bottom: 33px;"> 
+            <li>Milk <span style="color:gray">(500ml)</span></li>
+            <li>2 bananas</li>
+            <li>1tbsp Peanut butter</li>
+            <li>Oats<span style="color:gray">(100ml)</span></li></li>
+            <li>Ice cream<span style="color:gray">(200ml)</span></li></li>
+        </ul>
+    </div>
+
+    <div>
+        <h3>Instructions:</h3>
+         <ol style="width: 1000px; margin-bottom: 33px;">
+            <li>Put milk in the blender</li> <br>
+            <li>Put the 2 bananas along the milk in the blender</li> <br>
+            <li>together put the peanut butter and oats in the blender</li> <br>
+            <li>Lastly put the ice cream and turn on the blender</li> <br>
+            <li>Let it blend until it becomes a smooth liquid</li> <br>
+            </ol>
+        
+    </div>
+
+    <div>
+    <table style="width:33%; font-size: 16px; margin-bottom:50px ;"  ; >
+        <h3>Nutrients:</h3>
+        <tr>
+            <th>Ingredient</th>
+            <th>Kcal</th>
+        </tr>
+        <tr align="center">
+            <td>Milk (500ml)</td>
+            <td>300</td>
+        </tr>
+        <tr align="center">
+            <td>2 bananas</td>
+            <td>200</td>
+        </tr>     
+        <tr align="center">
+            <td>1tbsp Peanut butter</td>
+            <td>150</td>
+        </tr>     
+        <tr align="center">
+            <td>Oats(100ml)</td>
+            <td>45</td>
+        </tr>
+        <tr align="center">
+            <td>Ice cream(200ml)</td>
+            <td>300</td>
+        </tr> ¨
+        <tr align="center">
+            <th>TOTAL</td>
+            <th>995</td>
+        </tr>
+  
+
+    </table>
+    </div>
+
+    <div>
+        <form>
+            <fieldset style="padding: 30px; margin-bottom: 15px;">
+                <legend>Skicka Kommentar</legend>
+                    <input type="text" id="Comment" name="C-input"> 
+                    <input type="submit" value="Submit">
+            </fieldset>
+
+        </form>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+
+</html>
