@@ -19,7 +19,12 @@ Varje recept-sida ska innehålla följande delar:
     <meta charset="UTF-8">
     <title></title>
 
-<style >
+<!-- 
+    fixt kort css för att göra tabeller finare, och så att man kan hovera över dom och ändra färg
+-->
+
+<style> 
+
     table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
@@ -32,6 +37,8 @@ tr:hover {background-color: hsla(0, 0%, 0%, 0.11);}
 </head>
 
 <body>
+    
+
      <a style="font-size: 20px;" href="slutuppgift-receptsida.html">Tillbaka</a>
 
     <div>
@@ -41,7 +48,9 @@ tr:hover {background-color: hsla(0, 0%, 0%, 0.11);}
 
     </div>
 
-
+<!-- 
+    En oordnad lista över ingredienserna som receptet innehåller
+-->
     <div >
         <h3>Ingredients:</h3>
         <ul style="margin-bottom: 33px;"> 
@@ -56,6 +65,10 @@ tr:hover {background-color: hsla(0, 0%, 0%, 0.11);}
         </ul>
     </div>
 
+<!-- 
+    En ordnad lista som steg för steg förklarar receptet
+-->
+
     <div>
         <h3>Instructions:</h3>
          <ol style="width: 1000px; margin-bottom: 33px;">
@@ -68,6 +81,10 @@ tr:hover {background-color: hsla(0, 0%, 0%, 0.11);}
         </ol>
         
     </div>
+
+<!-- 
+    En tabell med varje ingrediens och hur många kalorier det innehåller
+-->
 
     <div>
     <table style="width:33%; font-size: 16px; margin-bottom:50px ;"  ; >
@@ -115,6 +132,10 @@ tr:hover {background-color: hsla(0, 0%, 0%, 0.11);}
 
     </table>
     </div>
+
+<!-- 
+    Ett formulär där personer som läser receptet kan ge kommentarer fungerar inte tho
+-->
 
     <div>
         <form>
